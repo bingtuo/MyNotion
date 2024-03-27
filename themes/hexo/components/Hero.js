@@ -31,7 +31,7 @@ const Hero = props => {
           strings: GREETING_WORDS,
           loop: true,
           typeSpeed: 100,
-          backSpeed: 60,
+          backSpeed: 50,
           backDelay: 200,
           showCursor: true,
           smartBackspace: true
