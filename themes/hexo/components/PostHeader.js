@@ -66,7 +66,7 @@ export default function PostHeader({ post, siteInfo }) {
             </div>
 
             {/* 文章字数 */}
-            <span className='mx-2'><WordCount /></span>
+            <span className='mr-1'><WordCount /></span>
 
             {/* 次查看 */}
             {/*{JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && <div className="busuanzi_container_page_pv font-light mr-2">
