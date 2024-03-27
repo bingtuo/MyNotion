@@ -5,6 +5,7 @@ import NotionIcon from '@/components/NotionIcon'
 import LazyImage from '@/components/LazyImage'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import { siteConfig } from '@/lib/config'
+import WavesArea from './WavesArea'
 
 export default function PostHeader({ post, siteInfo }) {
   const { locale, fullWidth } = useGlobal()
@@ -80,6 +81,7 @@ export default function PostHeader({ post, siteInfo }) {
             </div>
         </div>
       </header>
+      <WavesArea/>
     </div>
   )
 }
