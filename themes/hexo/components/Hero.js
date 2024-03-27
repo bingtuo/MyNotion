@@ -6,6 +6,7 @@ import NavButtonGroup from './NavButtonGroup'
 import { useGlobal } from '@/lib/global'
 import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
+import WavesArea from './WavesArea'
 
 let wrapperTop = 0
 
@@ -79,6 +80,7 @@ const Hero = props => {
                 className={`header-cover w-full h-screen object-cover object-center ${siteConfig('HEXO_HOME_NAV_BACKGROUND_IMG_FIXED', null, CONFIG) ? 'fixed' : ''}`} />
 
         </header>
+      <WavesArea/>
   )
 }
 
