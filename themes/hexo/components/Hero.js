@@ -53,6 +53,7 @@ const Hero = props => {
   }
 
   return (
+    <div>
         <header
             id="header" style={{ zIndex: 1 }}
             className="w-full h-screen relative bg-black"
@@ -81,6 +82,7 @@ const Hero = props => {
 
         </header>
       <WavesArea/>
+    </div>
   )
 }
 
