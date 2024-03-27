@@ -6,6 +6,7 @@ import LazyImage from '@/components/LazyImage'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import { siteConfig } from '@/lib/config'
 import WavesArea from './WavesArea'
+import WordCount from '@/components/WordCount'
 
 export default function PostHeader({ post, siteInfo }) {
   const { locale, fullWidth } = useGlobal()
@@ -63,6 +64,9 @@ export default function PostHeader({ post, siteInfo }) {
                 {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
               </div>
             </div>
+
+            {/* 文章字数 */}
+            <span className='mx-2'><WordCount /></span>
 
             {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && <div className="busuanzi_container_page_pv font-light mr-2">
               <span className="mr-2 busuanzi_value_page_pv" />
