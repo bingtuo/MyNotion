@@ -13,8 +13,10 @@ export default function WordCount() {
 
   return <span id='wordCountWrapper' className='flex gap-3 font-light'>
         <span className='flex whitespace-nowrap items-center'>
+          <span className='mx-2'>
             <i className='pl-1 pr-2 fas fa-file-word' />
             <span id='wordCount'>0</span>
+          </span>
         </span>
         <span className='flex whitespace-nowrap items-center'>
             <i className='mr-1 fas fa-clock' />
