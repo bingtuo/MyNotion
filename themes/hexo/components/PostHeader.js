@@ -62,7 +62,7 @@ export default function PostHeader({ post, siteInfo }) {
               )}
               {/* 最后更新 */}
               {post?.finished_date && post?.finished_date !== 'Invalid Date' && (
-                <div className='mx-3'>
+                <div className='mx-4'>
                   <i className="far fa-calendar-check pr-2"></i>
                   {locale.COMMON.LAST_EDITED_TIME}: {post.finished_date}
                 </div>
