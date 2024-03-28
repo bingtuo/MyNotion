@@ -15,7 +15,7 @@ export default function WordCount() {
         <span className='flex whitespace-nowrap items-center'>
           <span className='mr-2'>
             <i className='pl-1 pr-2 fas fa-file-word' />
-            <span id='wordCount'>0</span>
+            {locale.COMMON.WORD_COUNT}: <span id='wordCount'>0</span>
           </span>
         </span>
         <span className='flex whitespace-nowrap items-center'>
