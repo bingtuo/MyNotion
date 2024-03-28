@@ -44,10 +44,9 @@ export default function PostHeader({ post, siteInfo }) {
           <div className="leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-white">
             <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />{post.title}
           </div>
-
           <section className="flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-400 font-light leading-8">
-
             <div className='flex justify-center dark:text-gray-200 text-opacity-70'>
+              <div className='mr-2'><WordCount /></div>
               {post?.type !== 'Page' && (
                 <>
                   <Link
@@ -64,9 +63,6 @@ export default function PostHeader({ post, siteInfo }) {
                 {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
               </div>
             </div>
-
-            {/* 文章字数 */}
-            <span className='mx-2'><WordCount /></span>
 
             {/* 次查看 */}
             {/*{JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && <div className="busuanzi_container_page_pv font-light mr-2">
