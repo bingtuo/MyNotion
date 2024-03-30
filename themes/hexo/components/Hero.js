@@ -68,7 +68,7 @@ const Hero = props => {
                 </div>
 
                 {/* 首页导航大按钮 */}
-                {siteConfig('HEXO_HOME_NAV_BUTTONS', null, CONFIG) && <NavButtonGroup {...props} />}
+                {/* {siteConfig('HEXO_HOME_NAV_BUTTONS', null, CONFIG) && <NavButtonGroup {...props} />} */}
 
                 {/* 滚动按钮 */}
                 <div onClick={scrollToWrapper} className="z-10 cursor-pointer w-full text-center py-4 text-3xl absolute bottom-10 text-white">
