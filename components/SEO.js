@@ -137,7 +137,7 @@ const SEO = props => {
       {SEO_BING_SITE_VERIFICATION && (
         <meta
           name='msvalidate.01'
-          content={SEO_BING_SITE_VERIFICATION}
+          content={SEO_BING_SITE_VERIFICATION} /
         />
       )}  
 
