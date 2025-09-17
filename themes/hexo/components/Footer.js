@@ -2,6 +2,8 @@ import { BeiAnGongAn } from '@/components/BeiAnGongAn'
 import BeiAnSite from '@/components/BeiAnSite'
 import PoweredBy from '@/components/PoweredBy'
 import { siteConfig } from '@/lib/config'
+import WavesArea from './WavesArea'
+import Fish from './Fish'
 
 const Footer = ({ title }) => {
   const d = new Date()
@@ -11,6 +13,7 @@ const Footer = ({ title }) => {
     parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
   return (
+    <div>
     <footer className='relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm p-6'>
       {/* <DarkModeButton/> */}
       <i className='fas fa-copyright' /> {`${copyrightDate}`}
@@ -39,6 +42,8 @@ const Footer = ({ title }) => {
       </span>
       <br />
     </footer>
+    <Fish/>
+    </div>
   )
 }
 
