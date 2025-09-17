@@ -5,6 +5,7 @@ import { useGlobal } from '@/lib/global'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import SmartLink from '@/components/SmartLink'
 import TagItemMini from './TagItemMini'
+import WavesArea from './WavesArea'
 
 /**
  * 文章详情页的Hero块
@@ -94,6 +95,7 @@ export default function PostHero({ post, siteInfo }) {
           </div>
         </div>
       </header>
+      <WavesArea/>        
     </div>
   )
 }
