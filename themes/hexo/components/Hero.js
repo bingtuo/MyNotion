@@ -32,9 +32,10 @@ const Hero = props => {
           changeType(
             new window.Typed('#typed', {
               strings: GREETING_WORDS,
-              typeSpeed: 200,
-              backSpeed: 100,
-              backDelay: 400,
+              loop: true,
+              typeSpeed: 100,
+              backSpeed: 50,
+              backDelay: 200,
               showCursor: true,
               smartBackspace: true
             })
