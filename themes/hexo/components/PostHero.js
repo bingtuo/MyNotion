@@ -6,6 +6,7 @@ import { formatDateFmt } from '@/lib/utils/formatDate'
 import SmartLink from '@/components/SmartLink'
 import TagItemMini from './TagItemMini'
 import WavesArea from './WavesArea'
+import WordCount from '@/components/WordCount'
 
 /**
  * 文章详情页的Hero块
@@ -61,6 +62,12 @@ export default function PostHero({ post, siteInfo }) {
 
           <section className='flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
             <div className='flex justify-center dark:text-gray-200 text-opacity-70'>
+              <div className='mr-2'>
+                <WordCount
+                  wordCount={post.wordCount}
+                  readTime={post.readTime}
+                />
+              </div>
               {post?.type !== 'Page' && (
                 <>
                   <SmartLink
@@ -71,9 +78,9 @@ export default function PostHero({ post, siteInfo }) {
                   </SmartLink>
                 </>
               )}
-              <div className='pl-1 mr-2'>
+              {/*<div className='pl-1 mr-2'>
                 {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
-              </div>
+              </div>*/}
             </div>
 
             {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && (
